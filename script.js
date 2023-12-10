@@ -54,3 +54,34 @@ function checkstate(ques,faqbtn,cross,plus,faqans){
       console.log("clicked else")
    }
 }
+
+const header_btn = document.querySelector(".header_get_started_btn");
+const header_get_started_btn_img = document.querySelector(".header_get_started_btn_img");
+
+header_btn.addEventListener("mouseover", () => {
+   setTimeout(()=>{
+      header_get_started_btn_img.style.display = "inline-block";
+   },150);
+});
+
+header_btn.addEventListener("mouseout", () => {
+   setTimeout(()=>{
+      header_get_started_btn_img.style.display = "none";
+   },150);
+});
+const header_btn1 = document.querySelector(".header_get_started_btn1");
+const header_get_started_btn_img1 = document.querySelector(".header_get_started_btn_img1");
+
+header_btn1.addEventListener("mouseover", () => {
+   setTimeout(()=>{
+      header_get_started_btn_img1.style.display = "inline-block";
+   },150);
+});
+
+header_btn1.addEventListener("mouseout", () => {
+   setTimeout(()=>{
+      header_get_started_btn_img1.style.display = "none";
+   },150);
+});
+
+

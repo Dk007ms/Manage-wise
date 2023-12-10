@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="wrapper overflow-x-hidden overflow-y-auto  h-[486.9rem]">
+    <div class="wrapper overflow-x-hidden overflow-y-auto h-screen">
         <nav class="navbar w-screen h-20 bg-[#fdf3ed] shadow-md  flex justify-between px-9 items-center">
             
             <img class="w-52" src="assets/logo.webp" alt="Manage Wise">
@@ -30,15 +30,18 @@
               <p class="text-7xl  font-semibold  font-inter text-center">Empower your business with <span class="text-[#fe8162]">Strategic</span> insights</p>
               <p class="text-xl opacity-50 font-semibold text-center w-[40rem]">Powerful management platform designed to streamline your business operations, boost productivity, and drive success</p>
               <div class="buttons_header flex justify-center items-center gap-5">
-                  <button class="bg-[#8247ff] w-52  h-14 rounded-xl shadow-md font-[600] text-white text-lg font-sans transition-all ease-in-out delay-150   duration-500   hover:border-[0.1px] hover:border-white border-[#eeeefa]">Get Started</button>
-                  <button class="bg-white w-52  h-14  gap-1 justify-center items-center rounded-xl shadow-md font-[600] text-black text-lg font-sans transition-all ease-in-out delay-150   duration-500   hover:border-[0.1px] hover:border-black border-[#eeeefa]">
+                  <button class="header_get_started_btn  bg-[#8247ff] w-52 h-14 rounded-xl flex justify-center items-center gap-4 shadow-md  text-white text-xl font-sans font-semibold transition-all ease-in-out delay-150   duration-500  hover:ring-[#8247ff] hover:ring-opacity-20  hover:ring-8">
+                     Get Started
+                     <img src="assets/next.png" alt="next" class="header_get_started_btn_img w-5 hidden transition-all ease-in-out delay-150 duration-500">
+                  </button>
+                  <button class="bg-white w-52  h-14  gap-1 justify-center items-center rounded-xl shadow-md font-[600] text-black text-xl font-sans transition-all ease-in-out delay-150   duration-500   hover:border-[0.1px] hover:border-black border-[#eeeefa]">
                     Watch Demo
                     <img class="inline-block w-6" src="assets/play.png" alt="play">
                   </button>
                </div>
             </div>
             
-            <img class=" block w-[75rem] rounded-3xl relative top-[35rem] shadow-lg shadow-[#e9edf1] hover:scale-[1.01] hover:translate-y-1 transition-all ease-in-out duration-1000" src="assets/landing_page_main.webp" alt="main">
+            <img class="  block w-[75rem] rounded-3xl relative top-[35rem] shadow-lg shadow-[#e9edf1] hover:scale-[1.01] hover:translate-y-1 transition-all ease-in-out duration-1000" src="assets/landing_page_main.webp" alt="main">
             
             <div class="landing_second relative top-[45rem] flex flex-col justify-center items-center gap-[1.7rem]">
                 <span class="bg-white p-2 text-xs rounded-lg w-[11rem] h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2"><img class="w-5 inline-block" src="assets/trending.png" alt="wave">PREMIER FEATURES</span>
@@ -110,9 +113,9 @@
 
         </div>
 
-        <div class="footer w-screen h-[195rem] border-none bg-gradient-to-t from-[#fdf3ed] from-90%[white]  relative top-[0.1rem] ">
+        <div class="footer w-screen h-[242rem] border-none bg-gradient-to-t from-[#fdf3ed] from-90%[white]  relative top-[0.1rem] ">
             <div class="firstfooterdiv flex p-32 justify-between">
-                <div class="twodivs w-[20rem] h-[25rem]">
+                <div class="twodivs w-[20rem] h-[25rem] relative">
                     <div class="landing_second relative flex flex-col justify-center items-start gap-[1.7rem]">
                         <span class="bg-white p-2 text-xs rounded-lg w-max h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">🙋‍♀️ FAQ</span>
                         <p class="text-5xl  font-semibold  font-inter ">Need <span class="text-[#fe8162]">Answers?</span> </p>
@@ -120,7 +123,7 @@
                           
                     </div>
                 </div>
-                <div class="twodivs w-[50rem] h-[25rem] flex flex-col gap-8">
+                <div class="twodivs w-[50rem] h-max relative flex flex-col gap-8">
                     <div class="questions relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl">
                         <div class="questiontab w-[44rem] flex justify-between transition-all ease-in-out duration-700">
                             <h2 class="inline-block text-2xl font-bold ques1">What is Manage Wise and what does it offer?</h2>
@@ -176,29 +179,162 @@
                 </div>
             </div>
 
-            <div class="landing_second relative top-64 flex flex-col justify-center items-center gap-[1.7rem]">
-                <span class="bg-white p-2 text-xs rounded-lg w-[11rem] h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2"><img class="w-5 inline-block" src="assets/trending.png" alt="wave">PREMIER FEATURES</span>
-                <p class="text-5xl  font-semibold  font-inter text-center">Discover our product's <span class="text-[#fe8162]">Capabilities</span> </p>
-                <p class="text-xl opacity-50 font-semibold text-center w-[38rem]">Don't settle for mediocrity - embrace the future of management with Manage Wise.</p>      
+            <div class="footer_second_third w-screen h-[60rem]">            
+                <div class="footerlanding_second relative  flex flex-col justify-center items-center gap-[1.7rem]">
+                    <span class="bg-white p-2 text-lg rounded-lg w-28 h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">💲<span class="text-xs font-bold">PRICING</span></span>
+                    <p class="text-5xl  font-semibold  font-inter text-center">Select your ideal<span class="text-[#fe8162]">Pricing</span>Plan </p>
+                    <p class="text-xl opacity-50 font-semibold text-center w-[38rem]">At Manage Wise, we believe in providing you with <br> pricing plans that adapt to your unique needs.</p>      
+                </div>
+
+                <div class="footerlanding_third relative top-28 mx-auto flex  justify-center items-center w-[80rem] h-max gap-12">
+                    <div class="rate1 border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[29rem] rounded-3xl bg-[#ededfa]">
+                        <div class="rate-card flex flex-col p-8 gap-4 justify-evenly h-[29rem]">
+                            <span class="bg-white p-2 text-[0.8rem] rounded-lg w-20 h-7 flex justify-center items-center gap-2 text-[#ffb9a8] font-bold border-2">FREE</span>
+                            <div class="text-black text-6xl flex  w-36 font-semibold">
+                                <span class="w-10 flex justify-center">💲</span>
+                                <span>0</span> 
+                                <span class="text-[1.1rem] relative top-9">/month</span>                       
+                            </div>
+                            <div class="features flex flex-col gap-1">
+                            <div class="text-black opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Access to all basic features</div>
+                            <div class="text-black opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Reporting and analytics</div>
+                            <div class="text-black opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Up to 5 individual users</div>
+                            <div class="text-black opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Chat and email support</div>
+                            </div>
+                            <button class="bg-white w-44  h-14 rounded-xl shadow-md font-[600] text-black text-lg font-sans transition-all ease-in-out delay-150   duration-500 hover:border-[0.1px] hover:border-black border-[#eeeefa] ">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="rate2 border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[29rem] rounded-3xl relative bottom-6 bg-[#1c1c1c]">
+                        <div class="rate-card flex flex-col p-8 gap-4 justify-evenly h-[29rem]">
+                            <span class="bg-white p-2 text-[0.8rem] rounded-lg w-20 h-7 flex justify-center items-center gap-2 text-[#ffb9a8] font-bold border-2">STANDARD</span>
+                            <div class="text-white text-6xl flex  w-36 font-semibold">
+                                <span class="w-10 flex justify-center">💲</span>
+                                <span>25</span>
+                                <span class="text-[1.1rem] relative top-9">/month</span>
+                            </div>
+                            <div class="features flex flex-col gap-1">
+                            <div class="text-white opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Access to all basic features</div>
+                            <div class="text-white opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Reporting and analytics</div>
+                            <div class="text-white opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Up to 5 individual users</div>
+                            <div class="text-white opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Chat and email support</div>
+                            <div class="text-white opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> 3+ integrations</div>
+                            <div class="text-white opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4">Account performance reporting</div>
+                            </div>
+                            <button class="bg-[#8247ff] w-44  h-14 rounded-xl shadow-md font-[600] text-white text-lg font-sans transition-all ease-in-out delay-150   duration-500   hover:ring-[#8247ff] hover:ring-opacity-50  hover:ring-8">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="rate3 border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[29em] rounded-3xl bg-[#ededfa]">
+                        <div class="rate-card flex flex-col p-8 gap-4 justify-evenly h-[29rem]">
+                            <span class="bg-white p-2 text-[0.8rem] rounded-lg w-20 h-7 flex justify-center items-center gap-2 text-[#ffb9a8] font-bold border-2">BUSINESS</span>
+                            <div class="text-black text-6xl flex  w-36 font-semibold">
+                                <span class="w-10 flex justify-center">💲</span>
+                                <span>42</span>
+                                <span class="text-[1.1rem] relative top-9">/month</span>
+                            </div>
+                            <div class="features flex flex-col gap-1">
+                            <div class="text-black opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Access to all basic features</div>
+                            <div class="text-black opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Reporting and analytics</div>
+                            <div class="text-black opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Up to 5 individual users</div>
+                            <div class="text-black opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> Chat and email support</div>
+                            <div class="text-black opacity-60 text-lg flex gap-3"><img src="assets/right.png" alt="tick" class=" object-contain inline-block w-4"> 3+ integrations</div>
+                            </div>
+                            <button class="bg-white w-44  h-14 rounded-xl shadow-md font-[600] text-black text-lg font-sans transition-all ease-in-out delay-150   duration-500 hover:border-[0.1px] hover:border-black border-[#eeeefa] ">Get Started</button>
+                        </div>
+                    </div>       
+                </div>
             </div>
 
-            <div class="landing_third relative top-96 mx-auto flex  justify-center items-center w-[80rem] gap-12">
-                <div class="scheduling border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[28rem] rounded-xl">
-                    <img src="assets/flexible scheduling.webp" alt="scheduling" class="5images w-[23.6rem]  h-[20rem] rounded-xl object-cover">
-                    <h2 class="px-10 relative top-4 font-outfit text-2xl font-semibold">Flexible Scheduling</h2>
-                    <p class="px-10 relative top-6 opacity-50 text-[1.1rem] font-semibold">Stay productive with our flexible scheduling system</p>
+            <div class="finalheading relative w-screen h-max">
+                <div class="footersecond_page2 relative w-[70rem] h-[20rem] flex flex-col gap-8 left-36">
+                    <span class="bg-white p-2 text-sm rounded-lg w-36 h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">❤️ TESTIMONIALS</span>
+                    <p class="text-[56px] font-[600] font-inter text-black leading-none">Hear from our <span class="text-[#fe8162]">Satisfied </span> clients</p>
+                    <p class="text-xl text-black opacity-50 font-semibold  w-[38rem]">Discover why our clients love working with us. Read their <br> testimonials and learn how we has helped businesses.</p>
                 </div>
-                <div class="communication border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[28rem] rounded-xl relative bottom-6">
-                    <img src="assets/easy communication.webp" alt="communication" class="5images w-[23.6rem]  h-[20rem] rounded-xl object-cover">
-                    <h2 class="px-10 relative top-4 font-outfit text-2xl font-semibold">Easy Communication</h2>
-                    <p class="px-10 relative top-6 opacity-50 text-[1.1rem] font-semibold">Collaborate seamlessly with your team in real-time</p>
-                </div>
-                <div class="analytics border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[28rem] rounded-xl">
-                    <img src="assets/analytics.webp" alt="analytics" class="5images w-[23.6rem]  h-[20rem] rounded-xl object-cover">
-                    <h2 class="px-10 relative top-4 font-outfit text-2xl font-semibold">Analytics</h2>
-                    <p class="px-10 relative top-6 opacity-50 text-[1.1rem] font-semibold">Gain valuable insights with our advanced analytics feature</p>
-                </div>       
             </div>
+
+            <div class="testimonial_slider_animation w-screen h-[32rem] flex gap-6 justify-center">
+                <div class="scheduling border-[#efeffa] border-[0.1px] w-[22rem]  h-[24rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
+                   <div class="sarah_desc font-oswald text-xl font-semibold text-[7f7f7f]"> "The customer support <br> team behind this product is <br> exceptional. They have been <br> incredibly responsive and <br> helpful, addressing any <br> questions or concerns <br> promptly.</div>
+                    <div class="flex gap-2 items-center text-xl  font-semibold font-oswald">
+                        <img class="w-20 object-cover" src="assets/sara_project_manager.webp" alt="sarah">
+                        <div class="alex flex flex-col items-start gap-2  text-xl  font-semibold font-oswald">
+                            Sarah
+                          <span class="text-lg font-semibold opacity-50">Project Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scheduling border-[#efeffa] border-[0.1px] w-[22rem]  h-[22rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
+                    <div class="david_desc font-oswald text-xl font-semibold text-[7f7f7f]">"Using this product has <br> been a game-changer for <br> our team. The collaboration <br>features and intuitive <br>
+                        interface have greatly <br> improved our productivity.</div>
+                    <div class="flex gap-2 items-center text-xl  font-semibold font-oswald">
+                        <img class="w-20 object-cover" src="assets/David Freelancer.webp" alt="david">
+                        <div class="alex flex flex-col items-start gap-2  text-xl  font-semibold font-oswald">
+                            David
+                          <span class="text-lg font-semibold opacity-50">Freelancer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scheduling border-[#efeffa] border-[0.1px] w-[22rem]  h-[24rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
+                    <div class="alex_desc font-oswald text-xl font-semibold text-[7f7f7f]">"I can't imagine running my <br> business without this <br> product. The automation <br> features have saved me <br> hours of manual work,<br> allowing me to focus on <br> strategic tasks.</div>
+                    <div class="flex gap-2 items-center text-xl  font-semibold font-oswald">
+                        <img class="w-20 object-cover" src="assets/Alex it manager.webp" alt="alex"> 
+                        <div class="alex flex flex-col items-start gap-2  text-xl  font-semibold font-oswald">
+                            Alex
+                          <span class="text-lg font-semibold opacity-50">IT Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scheduling border-[#efeffa] border-[0.1px] w-[22rem]  h-[22rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
+                    <div class="emily_desc font-oswald text-xl font-semibold text-[7f7f7f]">"Manage Wise transformed <br> our team's productivity. The <br> intuitive interface and <br> powerful features have <br> made a significant impact <br> on our daily operations"</div>
+                    <div class="flex gap-2 items-center text-xl  font-semibold font-oswald">
+                        <img class="w-20 object-cover" src="assets/Emily Art director.webp" alt="Emily">
+                        <div class="alex flex flex-col items-start gap-2  text-xl  font-semibold font-oswald">
+                            Emily
+                          <span class="text-lg font-semibold opacity-50">Art Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_final">
+                <div class="finalheading relative top-16 w-screen h-max flex justify-center">
+                    <div class="footersecond_page2 relative w-[75rem] h-[35rem] flex flex-col gap-8 border-[0.1px] border-[#efeffa]  bg-white p-20 px-20 rounded-3xl">
+                        <span class="bg-white p-2 text-sm rounded-lg w-40 h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">👋 DON'T MISS OUT</span>
+                        <p class="text-[56px] font-semibold font-inter text-black leading-none">Unleash your <br> <span class="text-[#fe8162]">Potential </span> with us</p>
+                        <p class="text-xl text-black opacity-50 font-inter font-medium w-[38rem]">Join our community of ambitious <br> individuals and organizations eager to <br> make a difference.</p>
+
+                        <button class="header_get_started_btn1  bg-[#8247ff] w-52 h-14 rounded-3xl flex justify-center items-center gap-4 shadow-md  text-white text-xl font-sans font-semibold transition-all ease-in-out delay-150   duration-500  hover:ring-[#8247ff] hover:ring-opacity-20  hover:ring-8">
+                            Try out now
+                            <img src="assets/next.png" alt="next" class="header_get_started_btn_img1 w-5 hidden transition-all ease-in-out delay-150 duration-500">
+                         </button>
+                    </div>
+
+                    <img class="absolute w-[28rem] top-28 right-72 object-cover" src="assets/happyusers.jpeg" alt="happy_users">
+                </div>
+            </div>
+
+            <div class="footer_link_final w-[76rem] h-[29rem] mx-auto flex flex-col justify-around bg-transparent rounded-3xl relative top-20">            
+                <div class="upperlinks flex justify-between w-[75rem]">
+                    <img class="w-48 object-contain" src="assets/logo.webp" alt="fotterlogo">
+                    <div class="links flex flex-col gap-3 relative top-16 text-[#4b444b] font-semibold font-inter">
+                        <a href="">Features</a>
+                        <a href="">FAQ</a>
+                        <a href="">Pricing</a>
+                        <a href="">Testimonials</a>
+                    </div>
+                </div>
+
+                <div class="w-[75rem] h-[1.1px] bg-[#f4e9e4] relative top-12"></div>
+                <div class="bottomlinks flex justify-between w-[75rem] h-max">
+                    <span class="text-[#4b444b] font-semibold font-inter">© 2022 ManageWise, Inc.</span>
+                    <span class="w-24 flex justify-between">
+                        <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><img class="w-6" src="assets/instagram.png" alt="insta"></a>
+                        <a href="http://twitter.com" target="_blank" rel="noopener noreferrer"><img  class="w-6" src="assets/x.png" alt="twitter"></a>
+                        <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"><img class="w-6"  src="assets/linkedin.png" alt="linkedin"></a>
+                    </span>
+                </div>  
+            </div>
+>
 
         </div>
         
