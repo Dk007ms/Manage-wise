@@ -1,3 +1,4 @@
+
 var ques1=document.querySelector(".ques1");
 var faqbtn1=document.querySelector(".faqbtn1");
 var cross1=document.querySelector(".cross1");
@@ -36,14 +37,17 @@ faqbtn3.value=0;
 faqbtn4.value=0;
 faqbtn5.value=0;
 
-function checkstate(ques,faqbtn,cross,plus,faqans){
+function checkstate1(ques,faqbtn,cross,plus,faqans){
    if(faqbtn.value=="0"){
       cross.style.display="inline";
       faqans.style.display="flex";
       ques.style.color="#8358ff";
       plus.style.display="none";
       faqbtn.value=1;
-      console.log("clicked")
+      const qbar=document.querySelector(".questions1");
+      qbar.style.height="14rem";
+      qbar.style.overflow="visible";
+      faqans.style.opacity="0.5";
      }
      else{
       cross.style.display="none";
@@ -51,7 +55,106 @@ function checkstate(ques,faqbtn,cross,plus,faqans){
       ques.style.color="black";
       plus.style.display="inline";
       faqbtn.value=0;
-      console.log("clicked else")
+      const qbar=document.querySelector(".questions1");
+      qbar.style.height="6rem";
+      qbar.style.overflow="hidden";
+      faqans.style.opacity="0";
+   }
+}
+function checkstate2(ques,faqbtn,cross,plus,faqans){
+   if(faqbtn.value=="0"){
+      cross.style.display="inline";
+      faqans.style.display="flex";
+      ques.style.color="#8358ff";
+      plus.style.display="none";
+      faqbtn.value=1;
+      const qbar=document.querySelector(".questions2");
+      qbar.style.height="14rem";
+      qbar.style.overflow="visible";
+      faqans.style.opacity="0.5";
+     }
+     else{
+      cross.style.display="none";
+      faqans.style.display="none";
+      ques.style.color="black";
+      plus.style.display="inline";
+      faqbtn.value=0;
+      const qbar=document.querySelector(".questions2");
+      qbar.style.height="7rem";
+      qbar.style.overflow="hidden";
+      faqans.style.opacity="0";
+   }
+}
+function checkstate3(ques,faqbtn,cross,plus,faqans){
+   if(faqbtn.value=="0"){
+      cross.style.display="inline";
+      faqans.style.display="flex";
+      ques.style.color="#8358ff";
+      plus.style.display="none";
+      faqbtn.value=1;
+      const qbar=document.querySelector(".questions3");
+      qbar.style.height="12rem";
+      qbar.style.overflow="visible";
+      faqans.style.opacity="0.5";
+     }
+     else{
+      cross.style.display="none";
+      faqans.style.display="none";
+      ques.style.color="black";
+      plus.style.display="inline";
+      faqbtn.value=0;
+      const qbar=document.querySelector(".questions3");
+      qbar.style.height="7rem";
+      qbar.style.overflow="hidden";
+      faqans.style.opacity="0";
+   }
+}
+function checkstate4(ques,faqbtn,cross,plus,faqans){
+   if(faqbtn.value=="0"){
+      cross.style.display="inline";
+      faqans.style.display="flex";
+      ques.style.color="#8358ff";
+      plus.style.display="none";
+      faqbtn.value=1;
+      const qbar=document.querySelector(".questions4");
+      qbar.style.height="12rem";
+      qbar.style.overflow="visible";
+      faqans.style.opacity="0.5";
+     }
+     else{
+      cross.style.display="none";
+      faqans.style.display="none";
+      ques.style.color="black";
+      plus.style.display="inline";
+      faqbtn.value=0;
+      const qbar=document.querySelector(".questions4");
+      qbar.style.height="6rem";
+      qbar.style.overflow="hidden";
+      faqans.style.opacity="0";
+   }
+}
+function checkstate5(ques,faqbtn,cross,plus,faqans){
+   if(faqbtn.value=="0"){
+      cross.style.display="inline";
+      faqans.style.display="flex";
+      ques.style.color="#8358ff";
+      plus.style.display="none";
+      faqbtn.value=1;
+      const qbar=document.querySelector(".questions5");
+      qbar.style.height="14rem";
+      qbar.style.overflow="visible";
+      faqans.style.opacity="0.5";
+     }
+     else{
+      cross.style.display="none";
+      faqans.style.display="none";
+      ques.style.color="black";
+      plus.style.display="inline";
+      faqbtn.value=0;
+      const qbar=document.querySelector(".questions5");
+      qbar.style.height="6rem";
+      qbar.style.overflow="hidden";
+      faqans.style.opacity="0";
    }
 }
 
@@ -83,5 +186,8 @@ header_btn1.addEventListener("mouseout", () => {
       header_get_started_btn_img1.style.display = "none";
    },150);
 });
+
+
+// swiper testimonials
 
 
