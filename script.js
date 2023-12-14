@@ -1,4 +1,4 @@
-
+var wrapper=document.querySelector(".wrapper");
 var ques1=document.querySelector(".ques1");
 var faqbtn1=document.querySelector(".faqbtn1");
 var cross1=document.querySelector(".cross1");
@@ -190,4 +190,49 @@ header_btn1.addEventListener("mouseout", () => {
 
 // swiper testimonials
 
+// Define options before creating the IntersectionObserver
+const options = {
+   root: null,
+   rootMargin: '0px',
+   threshold: 0.2
+ };
+ 
+ const observer = new IntersectionObserver(handleIntersection, options);
+ 
+ const target_element = document.querySelector(".footersecond_page2");
+ 
+ observer.observe(target_element);
+ 
+ function handleIntersection(entries, observer) {
+   entries.forEach(entry => {
+     if (entry.isIntersecting) {
+       // Apply styles with a transition effect
+       target_element.style.transition = "transform 1s ease"; // Adjust the duration and timing function as needed
+       target_element.style.transform = "translateZ(0rem) rotate(0deg)";
+     }
+   });
+}
 
+
+// Define options before creating the IntersectionObserver
+const options2 = {
+   root: null,
+   rootMargin: '0px',
+   threshold: 0.5
+};
+
+const observer2 = new IntersectionObserver(handleIntersection2, options2);
+
+const target_element2 = document.querySelector(".main_img");
+
+observer2.observe(target_element2);
+
+function handleIntersection2(entries, observer) {
+   entries.forEach(entry => {
+       if (entry.isIntersecting) {
+           // Apply styles with a transition effect
+           entry.target.classList.add('active');
+           observer2.unobserve(entry.target);
+       }
+   });
+}
