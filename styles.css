@@ -48,7 +48,6 @@ body{
     animation-delay: 300ms;
 }
 .empower2{
-    opacity: 0.5;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
     animation-delay: 500ms;
@@ -75,26 +74,7 @@ body{
     }
 }
 
-.task_border{
-    animation-delay: 1000ms;
-}
-.task_border_para{
-    animation-delay: 700ms;
-}
 
-.declaration{
-    animation-delay: 500ms;
-}
-
-.scheduling{
-    animation-delay: 500ms;
-}
-.communication{
-    animation-delay: 800ms;
-}
-.analytics{
-    animation-delay: 850ms;
-}
 .scheduling1{
     animation-delay: 400ms;
 }
@@ -137,3 +117,97 @@ body{
 #faq{
     animation-delay: 200ms;
 }
+
+.wiggle{
+    animation: wiggle 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(5px);
+        opacity: 1;
+    }
+}
+
+.wiggle2 {
+    animation: wiggle2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  
+@keyframes wiggle2 {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(10px);
+      opacity: 1;
+    }
+}
+  
+.wiggle_1card {
+    animation: wiggle_1card 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  
+@keyframes wiggle_1card {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(10px);
+      opacity: 1;
+    }
+}
+  
+
+@keyframes wiggle_1 {
+    0% {
+      transform: translateY(45px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+.wiggle_1 {
+    animation: wiggle_1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+}
+  
+
+@keyframes jiggle {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(5px);
+      opacity: 1;
+    }
+  }
+  
+  .jiggle {
+    animation: jiggle 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  

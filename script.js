@@ -194,7 +194,7 @@ header_btn1.addEventListener("mouseout", () => {
 const options = {
    root: null,
    rootMargin: '0px',
-   threshold: 0.2
+   threshold: 0.4
  };
  
  const observer = new IntersectionObserver(handleIntersection, options);
@@ -208,7 +208,7 @@ const options = {
      if (entry.isIntersecting) {
        // Apply styles with a transition effect
        target_element.style.transition = "transform 1s ease"; // Adjust the duration and timing function as needed
-       target_element.style.transform = "translateZ(0rem) rotate(0deg)";
+       target_element.style.transform = "rotate(0deg)";
      }
    });
 }
@@ -235,4 +235,99 @@ function handleIntersection2(entries, observer) {
            observer2.unobserve(entry.target);
        }
    });
+}
+
+const boxes = document.querySelectorAll(".box");
+const options3 = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.3
+};
+const observer3 = new IntersectionObserver(handleIntersection3, options3);
+boxes.forEach((box) => {
+  observer3.observe(box);
+});
+
+function handleIntersection3(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Identify the target element
+      const targetElement = entry.target;
+
+      // Apply different animations based on the target element's class
+      const className = targetElement.className;
+
+      // Apply different animations based on the class name
+      switch (true) {
+        case className.includes('empower_head'):
+          targetElement.classList.add("wiggle");
+          targetElement.style.animationDelay ="400ms";
+          break;
+        case className.includes('empower_text'):
+          targetElement.classList.add("wiggle2");
+          targetElement.style.animationDelay ="500ms";
+          break;
+        case className.includes('cardanimation1'):
+         targetElement.classList.add("wiggle_1card",);
+          break;
+        case className.includes('cardanimation2'):
+         targetElement.classList.add("wiggle_1card",);
+         targetElement.style.animationDelay ="100ms";
+          break;
+        case className.includes('cardanimation3'):
+         targetElement.classList.add("wiggle_1card");
+         targetElement.style.animationDelay ="100ms";
+          break;
+        case className.includes('cardanimation4'):
+         targetElement.classList.add("wiggle_1card");
+         targetElement.style.animationDelay ="400ms";
+          break;
+        case className.includes('cardanimation5'):
+         targetElement.classList.add("wiggle_1card");
+         targetElement.style.animationDelay ="450ms";
+          break;
+        case className.includes('cardanimation6'):
+         targetElement.classList.add("wiggle_1card");
+         targetElement.style.animationDelay ="200ms";
+          break;
+        case className.includes('cardanimation7'):
+         targetElement.classList.add("wiggle_1card");
+         targetElement.style.animationDelay ="400ms";
+          break;
+        case className.includes('cardanimation8'):
+         targetElement.classList.add("wiggle_1card");
+         targetElement.style.animationDelay ="450ms";
+          break;
+        case className.includes('secondpage_main_img'):
+         targetElement.classList.add("wiggle_1");
+          break;
+        case className.includes('faq'):
+         targetElement.classList.add("jiggle");
+         targetElement.style.animationDelay ="150ms";
+          break;
+        case className.includes('box13'):
+          // Add custom animation for box13
+          break;
+        case className.includes('box14'):
+          // Add custom animation for box14
+          break;
+        case className.includes('box15'):
+          // Add custom animation for box15
+          break;
+        case className.includes('box16'):
+          // Add custom animation for box16
+          break;
+        case className.includes('box17'):
+          // Add custom animation for box17
+          break;
+        case className.includes('box18'):
+          // Add custom animation for box18
+          break;
+        // Add other cases as needed
+        default:
+          // Handle the default case if none of the conditions match
+          break;
+      }
+    }
+  });
 }
