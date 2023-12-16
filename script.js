@@ -221,21 +221,59 @@ const options2 = {
    threshold: 0.5
 };
 
-const observer2 = new IntersectionObserver(handleIntersection2, options2);
+// const observer2 = new IntersectionObserver(handleIntersection2, options2);
 
-const target_element2 = document.querySelector(".main_img");
+// const target_element2 = document.querySelector(".dashboardimage");
 
-observer2.observe(target_element2);
+// observer2.observe(target_element2);
 
-function handleIntersection2(entries, observer) {
-   entries.forEach(entry => {
-       if (entry.isIntersecting) {
-           // Apply styles with a transition effect
-           entry.target.classList.add('active');
-           observer2.unobserve(entry.target);
-       }
-   });
+// function handleIntersection2(entries, observer) {
+//    entries.forEach(entry => {
+//        if (entry.isIntersecting) {
+//            // Apply styles with a transition effect
+//            entry.target.classList.add('active');
+//            observer2.unobserve(entry.target);
+//        }
+//    });
+// }
+
+
+// Check if the viewport width is greater than or equal to 639px
+if (window.matchMedia('(min-width: 1279px)').matches) {
+  const observer2 = new IntersectionObserver(handleIntersection2, options2);
+
+  const target_element2 = document.querySelector(".dashboardimage");
+
+  observer2.observe(target_element2);
+
+  function handleIntersection2(entries, observer) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              // Apply styles with a transition effect
+              
+              entry.target.classList.add('active');
+          }
+      });
+  }
 }
+if (window.matchMedia('(min-width: 639px)').matches) {
+  const observer2 = new IntersectionObserver(handleIntersection2, options2);
+
+  const target_element2 = document.querySelector(".dashboardimage");
+
+  observer2.observe(target_element2);
+
+  function handleIntersection2(entries, observer) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              // Apply styles with a transition effect
+              
+              entry.target.classList.add('active2');
+          }
+      });
+  }
+}
+
 
 const boxes = document.querySelectorAll(".box");
 const options3 = {
@@ -265,6 +303,7 @@ function handleIntersection3(entries, observer) {
           break;
         case className.includes('empower_text'):
           targetElement.classList.add("wiggle2");
+          targetElement.style.opacity="0.5";
           targetElement.style.animationDelay ="500ms";
           break;
         case className.includes('cardanimation1'):
@@ -305,29 +344,20 @@ function handleIntersection3(entries, observer) {
          targetElement.classList.add("jiggle");
          targetElement.style.animationDelay ="150ms";
           break;
-        case className.includes('box13'):
-          // Add custom animation for box13
-          break;
-        case className.includes('box14'):
-          // Add custom animation for box14
-          break;
-        case className.includes('box15'):
-          // Add custom animation for box15
-          break;
-        case className.includes('box16'):
-          // Add custom animation for box16
-          break;
-        case className.includes('box17'):
-          // Add custom animation for box17
-          break;
-        case className.includes('box18'):
-          // Add custom animation for box18
-          break;
-        // Add other cases as needed
-        default:
-          // Handle the default case if none of the conditions match
-          break;
       }
     }
   });
 }
+
+const newnav = document.querySelector(".smallnavlinks");
+const newnavimg = document.querySelector(".newnavimg");
+const toggleimg = document.querySelector(".toggleimg");
+const navbartogglelinks = document.querySelector(".navbartogglelinks");
+
+newnav.addEventListener("click", () => {
+  navbartogglelinks.classList.add("navbartogglelinkstransition")
+  navbartogglelinks.classList.toggle("navbartogglelinksanimate"); // Replace "newnavht" with your actual class name
+  newnavimg.classList.toggle("newnavimgdisplay"); // Replace "newnavht" with your actual class name
+  toggleimg.classList.toggle("newnavimgdisplay2"); // Replace "newnavht" with your actual class name
+});
+

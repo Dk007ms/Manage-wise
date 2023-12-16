@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-        <nav class="navbar w-screen h-20 bg-[#fdf3ed] shadow-md  flex justify-between px-9 items-center">
+    <div class="wrapper xl:overflow-x-hidden xl:overflow-y-auto sm:overflow-x-hidden sm:overflow-y-auto xl:h-[534rem] sm:h-[654rem] sm:pointer-events-auto">
+        <nav class="navbar xl:w-screen sm:w-screen  sm:h-16 xl:h-20 bg-[#fdf3ed] shadow-md sm:relative sm:flex sm:justify-between sm:items-center sm:px-6 xl:flex xl:justify-between xl:px-9 xl:items-center">
             
-            <img class="w-52" src="assets/logo.webp" alt="Manage Wise">
-            
-            <div class="links flex w-max gap-7 items-center text-[1.1rem] font-oswald">
-                <a href="#landing_second" class="items text-black text-[17px] font- transition-all ease-in-out duration-200 hover:text-[#834bff] hover:cursor-pointer">Features</a>
+            <img class="xl:w-52 sm:w-48 xl:relative sm:absolute  sm: sm:object-contain sm:h-12 sm:" src="assets/logo.webp" alt="Manage Wise">
+            <button class="xl:hidden smallnavlinks sm:absolute right-6 sm:w-10 sm:h-10  sm:pointer-events-auto"><img class="toggleimg xl:hidden sm:sticky sm:w-10 sm:h-10" src="assets/menu-chocolate.png" alt="btn"><img class="newnavimg xl:hidden sm:hidden  sm:sticky sm:w-10 sm:h-10" src="assets/cross (1).png" alt="blackcross"></button>
+            <div class="links sm:hidden xl:flex lg:w-max xl:gap-7 xl:items-center xl:text-[1.1rem] font-oswald">
+                <a href="#landing_second" class="items text-black xl:text-[17px] font- transition-all ease-in-out duration-200 hover:text-[#834bff] hover:cursor-pointer">Features</a>
                 <div class="sepration w-1 h-1 bg-[#dcd0c4]"></div>
                 <a href="#faq" class="items text-black text-[17px] font- transition-all ease-in-out duration-200 hover:text-[#834bff] hover:cursor-pointer">FAQ</a>
                 <div class="sepration w-1 h-1 bg-[#dcd0c4]"></div>
@@ -26,90 +26,121 @@
                 <button class="bg-white w-36  h-11 rounded-lg shadow-md font-[600] text-black font-sans transition-all ease-in-out delay-150  hover:scale-110 duration-500   hover:border-[0.1px] hover:border-black border-[#eeeefa]">Buy Template</button>
             </div>
         </nav>
-        <div class="landing_page w-screen h-[175rem] border-none  bg-gradient-to-b from-[#fdf3ed] to-90%[white] flex flex-col  items-center relative top-[0.1rem] ">
-            <div class="lander flex flex-col  items-center gap-6 w-[70rem] absolute top-[5rem] h-[25rem] bg-transparent ">
+        <div class="navbartogglelinks h-0 opacity-0   gap-8 sm:relative top-5 sm:w-screen sm:mx-auto sm:flex justify-start flex-col  items-center xl:hidden  sm:left-0 right-0  xl:text-[1.1rem] font-oswald">
+            <a href="#landing_second" class="items  top-12 relative text-black sm:text-[19px]  xl:text-[17px] font- transition-all ease-in-out duration-200 hover:text-[#834bff] hover:cursor-pointer">Features</a>
+              
+            <a href="#faq" class="items sm:top-12 sm:relative text-black  sm:text-[19px] text-[17px] font- transition-all ease-in-out duration-200 hover:text-[#834bff] hover:cursor-pointer">FAQ</a>
+            
+            <a href="#pricing" class="items sm:top-12 sm:relative text-black sm:text-[19px]  text-[17px] font- transition-all ease-in-out duration-200 hover:text-[#834bff] hover:cursor-pointer">Pricing</a>
+           
+            <a href="#testimonials" class="items sm:top-12 sm:relative text-black  sm:text-[19px] text-[17px] font- transition-all ease-in-out duration-200 hover:text-[#834bff] hover:cursor-pointer">Testimonials</a>
+            <button class="header_get_started_btn  sm:top-12 sm:relative empower1 animate-jiggle bg-[#8247ff] w-[40rem] h-12 rounded-xl flex justify-center items-center gap-4 shadow-md  text-white text-xl font-sans font-semibold transition-all ease-in-out delay-150   duration-500  hover:ring-[#8247ff] hover:ring-opacity-20  hover:ring-8">
+                Get Started
+                <img src="assets/next.png" alt="next" class="header_get_started_btn_img w-5 hidden transition-all ease-in-out delay-150 duration-500">
+            </button>
+        </div>
+        <div class="landing_page w-screen h-[175rem] sm:w-screen sm:h-[175rem] border-none  bg-gradient-to-b from-[#fdf3ed] to-90%[white] flex flex-col  items-center relative top-[0.1rem] ">
+            <div class="lander flex flex-col  items-center xl:gap-6 xl:w-[70rem] absolute top-[5rem] h-[25rem] bg-transparent sm:w-[42rem] sm:gap-4 ">
               <span class="bg-white p-2 text-xs empower box rounded-lg w-[15rem] h-8 flex items-center justify-center gap-2 text-[#8247ff] font-medium border-2"><img class="w-5 inline-block" src="assets/hand (2).png" alt="wave">WELCOME TO MANAGE WISE!</span>
-              <p class="text-7xl box empower_head empower  font-semibold  font-inter text-center">Empower your business with <span class="text-[#fe8162]">Strategic</span> insights</p>
-              <p class="text-xl text-[#908d8d] box  empower_text empower2 opacity-0  font-semibold text-center w-[40rem]">Powerful management platform designed to streamline your business operations, boost productivity, and drive success</p>
-              <div class="buttons_header flex justify-center items-center gap-5">
-                  <button class="header_get_started_btn  empower1 animate-jiggle bg-[#8247ff] w-52 h-14 rounded-xl flex justify-center items-center gap-4 shadow-md  text-white text-xl font-sans font-semibold transition-all ease-in-out delay-150   duration-500  hover:ring-[#8247ff] hover:ring-opacity-20  hover:ring-8">
+              <p class="xl:text-7xl sm:text-5xl box empower_head empower  xl:font-semibold  xl:font-inter text-center">Empower your business with <span class="text-[#fe8162]">Strategic</span> insights</p>
+              <p class="xl:text-xl text-[#7f7875] box  empower_text empower2 opacity-0 sm:text-lg sm:font-normal sm:text-[#7f7875] xl:font-semibold text-center w-[40rem]">Powerful management platform designed to streamline your business operations, boost productivity, and drive success</p>
+              <div class="buttons_header sm:flex-wrap flex justify-center items-center gap-5">
+                  <button class="header_get_started_btn1 sm:w-[38rem] empower1 animate-jiggle bg-[#8247ff] xl:w-52 h-14 rounded-xl flex justify-center items-center gap-4 shadow-md  text-white text-xl font-sans font-semibold transition-all ease-in-out delay-150   duration-500  hover:ring-[#8247ff] hover:ring-opacity-20  hover:ring-8">
                      Get Started
-                     <img src="assets/next.png" alt="next" class="header_get_started_btn_img w-5 hidden transition-all ease-in-out delay-150 duration-500">
+                     <img src="assets/next.png" alt="next" class="header_get_started_btn_img1 w-5 hidden transition-all ease-in-out delay-150 duration-500">
                   </button>
-                  <button class="bg-white w-52  h-14 empower1 animate-jiggle gap-1 justify-center items-center rounded-xl shadow-md font-[600] text-black text-xl font-sans transition-all ease-in-out delay-150   duration-500   hover:border-[0.1px] hover:border-black border-[#eeeefa]">
+                  <button class="bg-white xl:w-52  h-14 sm:w-[38rem] empower1 animate-jiggle gap-1 justify-center items-center rounded-xl shadow-md font-[600] text-black text-xl font-sans transition-all ease-in-out delay-150   duration-500   hover:border-[0.1px] hover:border-black border-[#eeeefa]">
                     Watch Demo
-                    <img class="inline-block w-6" src="assets/play.png" alt="play">
+                    <img class=" inline-block w-6" src="assets/play.png" alt="play">
                   </button>
                </div>
             </div>
             
-            <img class="main_img inline-block  top-[36rem] mx-auto  rounded-3xl relative  shadow-lg shadow-[#e9edf1]  transition-all ease-in-out duration-150 " src="assets/landing_page_main.webp" alt="main">
+            <img class="main_img main_img2 dashboardimage xl:w-[80rem] inline-block sm:w-[40rem] top-[36rem] mx-auto  rounded-3xl relative  shadow-lg shadow-[#e9edf1]  " src="assets/landing_page_main.webp" alt="main">
             
-            <div id="landing_second" class="landing_second relative top-[45rem] flex flex-col justify-center items-center gap-[1.7rem]">
-                <span class="bg-white p-2 text-xs rounded-lg w-[11rem] h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2"><img class="w-5 inline-block" src="assets/trending.png" alt="wave">PREMIER FEATURES</span>
-                <p class="text-5xl animate-wiggle_1 font-semibold  font-inter text-center">Discover our product's <span class="text-[#fe8162]">Capabilities</span> </p>
-                <p class="text-xl opacity-50 font-semibold text-center w-[38rem]">Don't settle for mediocrity - embrace the future of management with Manage Wise.</p>      
+            <div id="landing_second" class="landing_second relative top-[45rem] flex flex-col justify-center items-center sm:gap-[0.6rem] xl:gap-[1.7rem]">
+                <span class="bg-white p-2 text-xs  rounded-lg w-[11rem] h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2"><img class="w-5 inline-block" src="assets/trending.png" alt="wave">PREMIER FEATURES</span>
+                <p class="xl:text-5xl animate-wiggle_1 font-semibold sm:text-4xl sm:tracking-tighter font-inter text-center">Discover our product's <span class="text-[#fe8162]">Capabilities</span> </p>
+                <p class="xl:text-xl sm:text-xl sm:text-[#7f7875]  font-semibold text-center sm:w-[40rem] w-[38rem]">Don't settle for mediocrity - embrace the future of management with Manage Wise.</p>      
             </div>
 
-            <div class="landing_third relative top-[50rem] flex flex-wrap justify-center w-[80rem] gap-12">
-                <div class=" opacity-0 box cardanimation1 rounded-2xl w-[38rem] h-[28rem] border-[#efeffa] border-[0.1px] bg-[#ededfa] text-start p-8 justify-center  text-5xl flex gap-4 flex-col">
+            <div class="landing_third relative top-[50rem] flex flex-wrap justify-center xl:w-[80rem] sm:flex-wrap sm:w-[44rem] sm:gap-6 gap-12">
+                <div class=" opacity-0 box cardanimation1 rounded-2xl xl:w-[38rem] sm:w-[38rem] xl:h-[28rem] sm:h-[16rem] border-[#e1e1ea] border-[0.1px] bg-[#ededfa] text-start p-8 justify-center  xl:text-5xl sm:text-2xl  flex gap-4 flex-col">
                     <img class="w-12  rounded-xl" src="assets/Designer (1).png" alt="star">
-                    <p class="relative top-2 font-outfit  w-[38rem]">Boost productivity and <br>streamline workflow with <br> us. Enjoy our intuitive <br> interface and robust <br> features.</p>
+                    <p class="relative top-2 font-outfit sm:hidden w-[38rem]">Boost productivity and <br>streamline workflow with <br> us. Enjoy our intuitive <br> interface and robust <br> features.</p>
+                    <p class="relative top-2 font-outfit sm: w-[38rem]">Boost productivity and streamline workflow <br> with  us. Enjoy our intuitive  interface and <br> robust  features.</p>
                 </div>
-                <div class=" opacity-0 box cardanimation2  border-[#efeffa] rounded-2xl w-[37rem] h-[28rem]" >
+                <div class=" opacity-0 box cardanimation2  border-[#e1e1ea] border-[0.1px] rounded-2xl xl:w-[37rem] sm:w-[38rem] xl:h-[28rem] sm:h-[24rem]" >
                     <img src="assets/task management.webp" alt="taskmanagement" class="task_border animate-wiggle_1card w-[36rem] h-[19rem] object-cover">
-                    <h2 class="px-10 relative top-10 font-outfit text-2xl font-semibold task_border_para box cardanimation2 opacity-0">Smart Task Management</h2>
-                    <p class="px-10 relative top-12 text-[#908d8d] text-[1.1rem] font-semibold task_border_para box cardanimation2 opacity-0 ">Say goodbye to chaos with our smart task management system</p>
+                    <h2 class="px-10 relative xl:top-10 font-outfit xl:text-2xl sm:text-lg font-semibold task_border_para box cardanimation2 opacity-0">Smart Task Management</h2>
+                    <p class="px-10 relative xl:top-12 text-[#908d8d] text-[1.1rem] font-semibold task_border_para box cardanimation2 opacity-0 ">Say goodbye to chaos with our smart task management system</p>
                 </div>
-                <div class=" opacity-0 box cardanimation3 border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[28rem] rounded-xl  ">
+                <div class=" opacity-0 box cardanimation3 border-[#e1e1ea] border-[0.1px] xl:w-[23.6rem] sm:w-[21rem]  xl:h-[28rem] sm:h-[22rem] rounded-xl  ">
                     <img src="assets/flexible scheduling.webp" alt="scheduling" class="5images w-[23.6rem]  h-[20rem] rounded-xl object-cover">
-                    <h2 class="px-10 relative top-4 font-outfit text-2xl font-semibold">Flexible Scheduling</h2>
-                    <p class="px-10 relative top-6 opacity-50 text-[1.1rem] font-semibold">Stay productive with our flexible scheduling system</p>
+                    <h2 class="px-10 relative xl:top-4 sm:bottom-2 font-outfit sm:text-xl xl:text-2xl font-semibold">Flexible Scheduling</h2>
+                    <p class="px-10 relative xl:top-6 hidden xl:block opacity-50  xl:text-[1.1rem] font-semibold">Stay productive with our flexible scheduling system</p>
                 </div>
-                <div class=" opacity-0 box cardanimation4 border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[28rem] rounded-xl ">
+                <div class=" opacity-0 box cardanimation4 border-[#e1e1ea] border-[0.1px] xl:w-[23.6rem] sm:w-[21rem]  xl:h-[28rem] sm:h-[22rem] rounded-xl ">
                     <img src="assets/easy communication.webp" alt="communication" class="5images w-[23.6rem]  h-[20rem] rounded-xl object-cover">
-                    <h2 class="px-10 relative top-4 font-outfit text-2xl font-semibold">Easy Communication</h2>
-                    <p class="px-10 relative top-6 opacity-50 text-[1.1rem] font-semibold">Collaborate seamlessly with your team in real-time</p>
+                    <h2 class="px-10 relative xl:top-4 sm:bottom-2 font-outfit sm:text-xl xl:text-2xl font-semibold">Easy Communication</h2>
+                    <p class="px-10 relative top-6 hidden xl:block opacity-50 text-[1.1rem] font-semibold">Collaborate seamlessly with your team in real-time</p>
                 </div>
-                <div class=" opacity-0 box cardanimation5 border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[28rem] rounded-xl ">
+                <div class=" opacity-0 box cardanimation5 border-[#e1e1ea] border-[0.1px] xl:w-[23.6rem] sm:w-[21rem]  xl:h-[28rem] sm:h-[22rem] rounded-xl ">
                     <img src="assets/analytics.webp" alt="analytics" class="5images w-[23.6rem]  h-[20rem] rounded-xl object-cover">
-                    <h2 class="px-10 relative top-4 font-outfit text-2xl font-semibold">Analytics</h2>
-                    <p class="px-10 relative top-6 opacity-50 text-[1.1rem] font-semibold">Gain valuable insights with our advanced analytics feature</p>
+                    <h2 class="px-10 relative xl:top-4 sm:bottom-2 font-outfit sm:text-xl xl:text-2xl font-semibold">Analytics</h2>
+                    <p class="px-10 relative top-6 hidden xl:block opacity-50 text-[1.1rem] font-semibold">Gain valuable insights with our advanced analytics feature</p>
                 </div>
             </div>
         </div>
 
-        <div class="secondpage bg-[#1c1c1c] w-screen h-[111.7rem] p-36 animate-scale_in_center">
-            <div class="second_page2 relative  w-max h-[20rem] flex flex-col gap-8">
+        <div class="secondpage bg-[#1c1c1c] w-screen xl:h-[110rem] sm:h-[149.9rem] xl:p-36 sm:p-8 animate-scale_in_center">
+            <div class="second_page2 relative  w-max h-[20rem] flex flex-col  gap-8">
                 <span class="bg-white p-2 text-base rounded-lg w-[9rem] h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">🤩 AND MORE...</span>
-                <p class="text-[56px] animate-wiggle_1 font-[500] font-outfit text-white leading-none">Explore an array of features that elevate your <br> <span class="text-[#fe8162]">Productivity</span> to new heights</p>
-                <p class="text-xl text-white opacity-50 font-semibold  w-[38rem]">Discover the tools that will revolutionize the way you <br> manage and optimize your operations</p>
+                <p class="xl:text-[56px] sm:text-[32px] sm:font-semibold animate-wiggle_1 font-[500] font-outfit text-white leading-none">Explore an array of features that elevate your <br> <span class="text-[#fe8162]">Productivity</span> to new heights</p>
+                <p class="text-xl sm:font-normal sm:opacity-70 text-white opacity-50 font-semibold  w-[38rem]">Discover the tools that will revolutionize the way you <br> manage and optimize your operations</p>
             </div>
             
-            <div class="second_page2  w-max h-[32rem] mx-auto flex justify-center items-center gap-12 relative">
-                <div class="scheduling1 bg-[#212121] opacity-0 box cardanimation6 w-[24rem]  h-[25rem] rounded-[3rem] flex flex-col justify-start pt-6 items-center  shadow-sm shadow-white">
+            <div class="second_page2  xl:w-max xl:h-[32rem] sm:h-[92rem]  mx-auto flex justify-center items-center sm:flex-wrap  xl:gap-12 relative">
+                <div class="scheduling1 bg-[#212121] opacity-0 box cardanimation6 xl:w-[24rem]  sm:w-[40rem] xl:h-[25rem]  sm:h-[20rem] rounded-[3rem] flex flex-col justify-start pt-6 items-center  shadow-sm shadow-white">
                     <img src="assets/mobile_icon.png" alt="analytics" class="5images w-28 h-w-28  rounded-xl object-cover">
                     <h2 class="px-10 relative top-4 font-outfit text-2xl text-white   font-semibold text-center">Cross-Platform Compatibility</h2>
                     <p class="px-10 relative top-6 opacity-50 text-[1rem] text-white   font-semibold text-center">Enjoy the flexibility of cross-platform compatibility. Our product works seamlessly across desktop, web, and mobile devices, allowing you to work from your preferred device.</p>
                 </div>
-                <div class="communication1 bg-[#212121] opacity-0 box cardanimation7 w-[24rem]  h-[25rem] rounded-[3rem] flex flex-col justify-start pt-6 items-center  shadow-sm shadow-white">
+                <div class="communication1 bg-[#212121] opacity-0 box cardanimation7 xl:w-[24rem]  sm:w-[40rem] xl:h-[25rem] sm:h-[20rem]  rounded-[3rem] flex flex-col justify-start pt-6 items-center  shadow-sm shadow-white">
                     <img src="assets/notification_icon.png" alt="analytics" class="5images w-28  h-w-28 rounded-xl object-cover">
                     <h2 class="px-10 relative top-4 font-outfit text-2xl text-white   font-semibold text-center">Stay Informed with Essential Notifications</h2>
                     <p class="px-10 relative top-6 opacity-50 text-[1rem] text-white   font-semibold text-center">Automate support from first customer contact to closing the ticket. Drastically improve time to resolution.Automate support from first customer contact to closing the ticket.</p>
                 </div>
-                <div class="analytics1 bg-[#212121] opacity-0 w-[24rem] box cardanimation8 h-[25rem] rounded-[3rem] flex flex-col justify-start pt-6 items-center  shadow-sm shadow-white">
+                <div class="analytics1 bg-[#212121] opacity-0 xl:w-[24rem] box cardanimation8 xl:h-[25rem] sm:w-[40rem] sm:h-[20rem]  rounded-[3rem] flex flex-col justify-start pt-6 items-center  shadow-sm shadow-white">
                     <img src="assets/encryption_icon.png" alt="analytics" class="5images w-28  h-w-28 rounded-xl object-cover">
                     <h2 class="px-10 relative top-4 font-outfit text-2xl text-white   font-semibold text-center">Secure Data Encryption at all times</h2>
                     <p class="px-10 relative  top-6 opacity-50 text-[1rem] text-white   font-semibold text-center">Trust in our robust data encryption to keep your sensitive information safe and secure. Rest easy knowing your data is protected at all times text-white  .</p>
                 </div>
+
+                <div class="tools xl:hidden sm:w-[25rem] sm:relative sm:bottom- sm:h-44 sm:gap-2 sm:flex sm:flex-wrap sm:justify-center sm:items-center">
+                    <img src="assets/gmail.png" alt="" class="icon w-20">
+                    <img src="assets/slack.png" alt="" class="icon w-16">
+                    <img src="assets/dropbox.png" alt="" class="icon w-20">
+                    <img src="assets/figma.png" alt="" class="icon w-16">
+                    <img src="assets/Notion (2).png" alt="" class="icon w-16">
+                    <img src="assets/gitlab.png" alt="" class="icon w-16">
+                    <img src="assets/vimeo.png" alt="" class="icon w-20">
+                    <img src="assets/zoom.png" alt="" class="icon w-20">
+                    <img src="assets/framer.png" alt="" class="icon w-16">
+                    <img src="assets/github (1).png" alt="" class="icon w-20">
+                    
+                </div>
             </div>
+
             
             
-            <div class="second_page2.3 relative top-24  flex flex-col justify-center items-center gap-[1.7rem]">
+            <div class="second_page2.3 xl:relative xl:top-24  flex flex-col justify-center items-center gap-[1.7rem]">
                 <span class="bg-white p-2 text-xs rounded-lg w-[11rem] h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2"><img class="w-5 inline-block" src="assets/repair-tools.png" alt="wave">INTEGRATIONS</span>
-                <p class="secondpage_main_text text-5xl text-white font-semibold animate-wiggle_1 font-inter leading-tight text-center">Enable <span class="text-[#fe8162]">integration </span>with <br>other popular tools and <br> platforms</p>
-                <p class="text-xl text-white opacity-50  font-medium font-inter leading-tight text-center w-[38rem]">Seamlessly connect and amplify your workflow <br> by enabling integration with a diverse array of <br> widely-used tools and platforms.</p>
-                <img class="secondpage_main_img w-[38rem] relative top-8 box opacity-0"  src="assets/second_page_main.webp" alt="second_page_main">    
+                <p class="secondpage_main_text hidden xl:block xl:text-5xl sm:text-3xl text-white font-semibold animate-wiggle_1 font-inter leading-tight text-center">Enable <span class="text-[#fe8162]">integration </span>with <br>other popular tools and <br> platforms</p>
+                <p class="secondpage_main_text xl:hidden xl:text-5xl sm:text-3xl text-white font-semibold animate-wiggle_1 font-inter leading-tight text-center">Enable <span class="text-[#fe8162]">integration </span>with other popular tools <br> and platforms</p>
+                <p class="sm:text-lg xl:hidden text-white opacity-50  font-normal font-inter leading-tight text-center w-[38rem]">Seamlessly connect and amplify your workflow by <br> enabling integration with a diverse array of widely- <br> used tools and platforms.</p>
+                <p class="xl:text-xl hidden xl:block text-white opacity-50  font-medium font-inter leading-tight text-center w-[38rem]">Seamlessly connect and amplify your workflow <br> by enabling integration with a diverse array of <br> widely-used tools and platforms.</p>
+                <img class="secondpage_main_img xl:w-[38rem] sm:w-[33rem] relative top-8 box opacity-0"  src="assets/second_page_main.webp" alt="second_page_main">    
             </div>
             
 
@@ -342,7 +373,7 @@
 
         </div>
   
-    
+    </div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>

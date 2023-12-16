@@ -1,30 +1,30 @@
-body{
-    overflow-x: hidden;
-    overflow-y: auto;
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-.swiper{
-    position: relative;
-    width: 50%;
-}
-
-.swiper-wrapper{
-    width: 100%;
-    height: 35rem;
-    display: flex;
-    align-items: center;
+.swiper {
+  position: relative;
+  width: 50%;
 }
 
-.card{
-    width: 20em;
-    height: 90%;
+.swiper-wrapper {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  align-items: center;
 }
 
-.swiper-slide:not(.swiper-slide-active){
-    filter: blur(2px);
+.card {
+  width: 20em;
+  height: 90%;
 }
 
-.landing_page{
-    perspective: 100px;
+.swiper-slide:not(.swiper-slide-active) {
+  filter: blur(2px);
+}
+
+.landing_page {
+  perspective: 100px;
 }
 /* .main_img {
     width: max-content;
@@ -36,178 +36,218 @@ body{
     transform-origin: top;
 } */
 
-.empower{
-    
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    animation-delay: 400ms;
+.empower {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-delay: 400ms;
 }
-.empower1{  
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    animation-delay: 300ms;
+.empower1 {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-delay: 300ms;
 }
-.empower2{
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    animation-delay: 500ms;
+.empower2 {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-delay: 500ms;
 }
 
 .main_img {
-    width: 80rem;
-    transform: perspective(1000px) rotateX(-2deg) scale(0.95, 0.8);
-    transform-origin: top;
+    @media screen and (min-width:1279px) {
+        width: 80rem;
+        transform: perspective(1000px) rotateX(-2deg) scale(0.95, 0.8);
+        transform-origin: top;
+    }
 }
 
-.main_img.active {
-    animation: main_img 1s ease both;
+.active {
+  animation: main_img 1s ease both;
+}
+
+.main_img2{
+    @media screen and (min-width: 630px) and (max-width: 1279px) {
+    width: 40rem;
+    transform: perspective(1000px) rotateX(-2deg) scale(0.95, 0.8);
+    transform-origin: top;
+ }
+}
+
+.active2 {
+  animation: main_img 1s ease both;
 }
 
 @keyframes main_img {
-    0% {
-        transform: perspective(1000px) rotateX(-2deg) scale(1, 1);
-        transform-origin: top;
-    }
-    100% {
-        transform: perspective(1000px) rotateX(0deg) scale(1, 1);
-        transform-origin: top;
-    }
+  0% {
+    transform: perspective(1000px) rotateX(-2deg) scale(1, 1);
+    transform-origin: top;
+  }
+  100% {
+    transform: perspective(1000px) rotateX(0deg) scale(1, 1);
+    transform-origin: top;
+  }
 }
 
-
-.scheduling1{
-    animation-delay: 400ms;
+.scheduling1 {
+  animation-delay: 400ms;
 }
-.communication1{
-    animation-delay: 600ms;
+.communication1 {
+  animation-delay: 600ms;
 }
-.analytics1{
-    animation-delay: 650ms;
-}
-
-.secondpage{
-    animation: scale-in-center 200ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.analytics1 {
+  animation-delay: 650ms;
 }
 
+.secondpage {
+  animation: scale-in-center 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 @keyframes scale-in-center {
-    0% {
-      transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-}
- 
-.secondpage_main_text{
-    animation-duration: 1.1s;
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
-.secondpage_main_img{
-    animation-delay:400ms ;
+.secondpage_main_text {
+  animation-duration: 1.1s;
 }
 
-.needanswers_heading{
-    animation-delay: 0ms;
-    animation-duration: 500ms;
+.secondpage_main_img {
+  animation-delay: 400ms;
 }
 
-#faq{
-    animation-delay: 200ms;
+.needanswers_heading {
+  animation-delay: 0ms;
+  animation-duration: 500ms;
 }
 
-.wiggle{
-    animation: wiggle 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+#faq {
+  animation-delay: 200ms;
+}
+
+.wiggle {
+  animation: wiggle 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes wiggle {
-    0% {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(5px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
 }
 
 .wiggle2 {
-    animation: wiggle2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: wiggle2 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-  
+
 @keyframes wiggle2 {
-    0% {
-      transform: translateY(40px);
-      opacity: 0;
-    }
-    50% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(10px);
-      opacity: 1;
-    }
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
 }
-  
+
 .wiggle_1card {
-    animation: wiggle_1card 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: wiggle_1card 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-  
+
 @keyframes wiggle_1card {
-    0% {
-      transform: translateY(40px);
-      opacity: 0;
-    }
-    50% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(10px);
-      opacity: 1;
-    }
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
 }
-  
 
 @keyframes wiggle_1 {
-    0% {
-      transform: translateY(45px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateY(45px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-  
+
 .wiggle_1 {
-    animation: wiggle_1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+  animation: wiggle_1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-  
 
 @keyframes jiggle {
-    0% {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    50% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(5px);
-      opacity: 1;
-    }
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  
-  .jiggle {
-    animation: jiggle 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  50% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
+  100% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+}
+
+.jiggle {
+  animation: jiggle 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.newnavht {
+  @media screen and (min-width: 639px) {
+    height: 24rem;
+    opacity: 1;
+    background-color: white;
+  }
+}
+
+.newnavimgdisplay {
+  @media screen and (min-width: 639px) {
+    display: inline-block;
+  }
+}
+.newnavimgdisplay2 {
+  @media screen and (min-width: 639px) {
+    display: none;
+  }
+}
+
+
+.navbartogglelinksanimate{
+    height: 24rem;
+    opacity: 1;
+    background-color: white;
+}
+
+.navbartogglelinkstransition{
+    transition:all;
+    transition-duration: 0.6s;
+    transition-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
