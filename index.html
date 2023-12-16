@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="wrapper xl:overflow-x-hidden xl:overflow-y-auto sm:overflow-x-hidden sm:overflow-y-auto xl:h-[534rem] sm:h-[654rem] sm:pointer-events-auto">
+    <div class="wrapper xl:overflow-x-hidden xl:overflow-y-auto sm:overflow-x-hidden sm:overflow-y-auto xl:h-[532.2rem] sm:h-[654rem] sm:pointer-events-auto">
         <nav class="navbar xl:w-screen sm:w-screen  sm:h-16 xl:h-20 bg-[#fdf3ed] shadow-md sm:relative sm:flex sm:justify-between sm:items-center sm:px-6 xl:flex xl:justify-between xl:px-9 xl:items-center">
             
             <img class="xl:w-52 sm:w-48 xl:relative sm:absolute  sm: sm:object-contain sm:h-12 sm:" src="assets/logo.webp" alt="Manage Wise">
@@ -147,80 +147,82 @@
         </div>
 
         <div class="footer w-screen h-[242rem] border-none bg-gradient-to-t from-[#fdf3ed] from-90%[white]  relative top-[0.1rem] ">
-            <div class="firstfooterdiv flex p-32 justify-between">
-                <div class="twodivs w-[20rem] h-[25rem] relative">
-                    <div class="landing_second relative flex flex-col justify-center items-start gap-[1.7rem]">
-                        <span class="bg-white p-2 text-xs rounded-lg w-max h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">🙋‍♀️ FAQ</span>
-                        <p class="text-5xl animate-wiggle_1 needanswers_heading font-semibold  font-inter ">Need <span class="text-[#fe8162]">Answers?</span> </p>
-                        <p class="text-xl opacity-70 font-semibold  w-[38rem]">Check out our most commonly <br> asked questions below to find the <br> information you need.</p>
-                          
+            <div class="firstfooterdiv flex xl:p-32 sm:p-20 xl:justify-between sm:flex-wrap sm:justify-center">
+                <div class="twodivs xl:w-[20rem] sm:w-[30rem] sm:h-[17rem] xl:h-[25rem] relative ">
+                    <div class="landing_second relative flex flex-col xl:justify-center xl:items-start sm:gap-4 xl:gap-[1.7rem] sm:items-center">
+                        <span class="bg-white p-2 xl:text-xs rounded-lg xl:w-max xl:h-8 sm:w-20 sm:text-sm sm:h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">🙋‍♀️ FAQ</span>
+                        <p class="text-5xl animate-wiggle_1 needanswers_heading font-semibold hidden xl:block font-inter ">Need <span class="text-[#fe8162]">Answers?</span> </p>
+                        <p class="text-4xl sm:w-56 sm:flex sm:flex-col sm:items-center sm:justify-center  sm:h-24 animate-wiggle_1 needanswers_heading font-semibold xl:hidden font-inter ">Need <span class="text-[#fe8162]">Answers?</span> </p>
+                        <p class="text-xl opacity-70 font-semibold hidden xl:block w-[38rem]">Check out our most commonly <br> asked questions below to find the <br> information you need.</p>
+                        <p class="text-lg opacity-70 font-semibold sm:text-center xl:hidden w-[38rem]">Check out our most commonly asked questions below to <br> find the information you need.</p>             
                     </div>
                 </div>
-                <div id="faq" class="box faq twodivs w-[50rem] h-max relative flex flex-col gap-5 opacity-0">
-                    <div class="questions1 relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl h-24 transition-height cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300 overflow-hidden">
-                        <div class="questiontab w-[44rem] flex justify-between transition-all ease-in-out duration-700">
-                            <h2 class="inline-block text-2xl font-bold ques1">What is Manage Wise and what does it offer?</h2>
+                <div id="faq" class="box faq twodivs xl:w-[50rem] xl:h-max sm:h-[28rem] sm:w-[44rem] relative flex flex-col gap-5 opacity-0 ">
+                    <div class="questions1 relative flex flex-col  gap-6 bg-[#f7f8fd] p-8 rounded-3xl h-24 transition-height cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300 overflow-hidden">
+                        <div class="questiontab xl:w-[44rem] sm:w-[39rem] sm:relative sm:bottom-4  flex sm:items-center justify-between transition-all ease-in-out duration-700">
+                            <h2 class="inline-block xl:text-2xl sm:text-xl font-bold ques1">What is Manage Wise and what does it offer?</h2>
                             <button class="inline-block relative right-[-2rem] items-baseline faqbtn1 w-11 h-11" onclick="checkstate1(ques1,faqbtn1,cross1,plus1,faqans1)">
-                                <img class="w-9 absolute right-[0.1rem] top-2 cross1 hidden"   src="assets/cross.png" alt="cut">
-                                <img class="w-9  absolute right-[0.1rem] top-2 plus1"   src="assets/plus.png" alt="show">
+                                <img class="w-9 absolute right-[0.1rem]  top-2 cross1 hidden"   src="assets/cross.png" alt="cut">
+                                <img class="w-9  absolute right-[0.1rem]  top-2 plus1"   src="assets/plus.png" alt="show">
                             </button>
                         </div>
-                        <p class="w-[43rem]  text-lg faqans1 opacity-0">Manage Wise is a comprehensive management platform designed to streamline your <br> business operations, enhance productivity, and drive success. It offers a range of <br> features including task management, scheduling, communication tools, analytics, and <br> more.</p>
+                        <p class="w-[43rem]  xl:text-lg sm:text-base faqans1 opacity-0">Manage Wise is a comprehensive management platform designed to streamline your <br> business operations, enhance productivity, and drive success. It offers a range of <br> features including task management, scheduling, communication tools, analytics, and <br> more.</p>
                     </div>
-                    <div class="questions2 relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl h-28 transition-height cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300 overflow-hidden">
-                        <div class="questiontab w-[44rem] flex justify-between">
-                            <h2 class="inline-block text-2xl font-bold ques2">Is Manage Wise suitable for small businesses and larger enterprises alike?</h2>
+                    <div class="questions2 relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl xl:h-28 sm:h-44 transition-height cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300 overflow-hidden">
+                        <div class="questiontab xl:w-[44rem] sm:w-[39rem] sm:relative sm:bottom-4 flex justify-between">
+                            <h2 class="inline-block xl:text-2xl sm:text-xl  font-bold ques2">Is Manage Wise suitable for small businesses and larger enterprises alike?</h2>
                             <button class="inline-block relative right-[-2rem] items-baseline faqbtn2 w-11 h-11" onclick="checkstate2(ques2,faqbtn2,cross2,plus2,faqans2)" >
                                 <img class="w-9 absolute right-[0.1rem] top-2 cross2 hidden" src="assets/cross.png" alt="cut">
                                 <img class="w-9  absolute right-[0.1rem] top-2 plus2 " src="assets/plus.png" alt="show">
                             </button>
                         </div>
-                        <p class="w-[43rem] opacity-50 text-lg faqans2 hidden">Yes, Manage Wise is designed to cater to the needs of both small businesses and larger enterprises. Its scalable features and customizable options make it versatile for various business sizes.</p>
+                        <p class="xl:w-[43rem] sm:w-[39rem] opacity-50 xl:text-lg sm:text-base sm:flex sm:flex-wrap faqans2 hidden">Yes, Manage Wise is designed to cater to the needs of both small businesses and larger enterprises. Its scalable features and customizable options make it versatile for various business sizes.</p>
                     </div>
-                    <div class="questions3 relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl h-28 transition-height cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300 overflow-hidden">
-                        <div class="questiontab w-[44rem] flex justify-between">
-                            <h2 class="inline-block text-2xl font-bold ques3">Can I access Manage Wise from different devices and platforms?</h2>
+                    <div class="questions3 relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl xl:h-28 sm:h-46 transition-height cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300 overflow-hidden">
+                        <div class="questiontab xl:w-[44rem] sm:w-[39rem] sm:relative sm:bottom-4 flex justify-between">
+                            <h2 class="inline-block xl:text-2xl sm:text-xl font-bold ques3">Can I access Manage Wise from different devices and platforms?</h2>
                             <button class="inline-block relative right-[-2rem] items-baseline faqbtn3 w-11 h-11" onclick="checkstate3(ques3,faqbtn3,cross3,plus3,faqans3)">
                                 <img class="w-9 absolute right-[0.1rem] top-2 cross3 hidden " src="assets/cross.png" alt="cut">
                                 <img class="w-9  absolute right-[0.1rem] top-2 plus3" src="assets/plus.png" alt="show">
                             </button>
                         </div>
-                        <p class="w-[43rem] opacity-50 text-lg faqans3 hidden">Yes, Manage Wise offers cross-platform compatibility, allowing you to access and use the platform seamlessly on desktops, web browsers, and mobile devices.</p>
+                        <p class="xl:w-[43rem] sm:w-[39rem] opacity-50 xl:text-lg sm:text-base sm:flex sm:flex-wrap faqans3 hidden">Yes, Manage Wise offers cross-platform compatibility, allowing you to access and use the platform seamlessly on desktops, web browsers, and mobile devices.</p>
                     </div>
-                    <div class="questions4 relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl h-24 transition-height cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300 overflow-hidden">
-                        <div class="questiontab w-[44rem] flex justify-between">
-                            <h2 class="inline-block text-2xl font-bold ques4">What kind of support options do you offer to users?</h2>
+                    <div class="questions4 relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl xl:h-28 sm:h-46 transition-height cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300 overflow-hidden">
+                        <div class="questiontab xl:w-[44rem] sm:w-[39rem] sm:relative sm:bottom-4 flex justify-between">
+                            <h2 class="inline-block xl:text-2xl sm:text-xl font-bold ques4">What kind of support options do you offer to users?</h2>
                             <button class="inline-block relative right-[-2rem] items-baseline faqbtn4 w-11 h-11" onclick="checkstate4(ques4,faqbtn4,cross4,plus4,faqans4)">
                                 <img class="w-9 absolute right-[0.1rem] top-2 cross4 hidden" src="assets/cross.png" alt="cut">
                                 <img class="w-9  absolute right-[0.1rem] top-2 plus4 " src="assets/plus.png" alt="show">
                             </button>
                         </div>
-                        <p class="w-[43rem] opacity-50 text-lg faqans4 hidden">We provide responsive customer support via chat and email to assist you with any inquiries, issues, or guidance you may need while using Manage Wise.</p>
+                        <p class="xl:w-[43rem] sm:w-[39rem] opacity-50 xl:text-lg sm:text-base sm:flex sm:flex-wrap faqans4 hidden">We provide responsive customer support via chat and email to assist you with any inquiries, issues, or guidance you may need while using Manage Wise.</p>
                     </div>
-                    <div class="questions5 relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl h-24 transition-height  cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300  overflow-hidden">
-                        <div class="questiontab w-[44rem] flex justify-between">
-                            <h2 class="inline-block text-2xl font-bold ques5">How secure is the data stored within Manage Wise?</h2>
+                    <div class="questions5 relative flex flex-col gap-6 bg-[#f7f8fd] p-8 rounded-3xl xl:h-28 sm:h-46 transition-height  cubic-bezier(0.95, 0.05, 0.795, 0.035)  duration-300  overflow-hidden">
+                        <div class="questiontab xl:w-[44rem] sm:w-[39rem] sm:relative sm:bottom-4 flex justify-between">
+                            <h2 class="inline-block xl:text-2xl sm:text-xl font-bold ques5">How secure is the data stored within Manage Wise?</h2>
                             <button class="inline-block relative right-[-2rem] items-baseline faqbtn5 w-11 h-11" onclick="checkstate5(ques5,faqbtn5,cross5,plus5,faqans5)">
                                 <img class="w-9 absolute right-[0.1rem] top-2 cross5 hidden" src="assets/cross.png" alt="cut">
                                 <img class="w-9  absolute right-[0.1rem] top-2 plus5 " src="assets/plus.png" alt="show">
                             </button>
                         </div>
-                        <p class="w-[43rem] opacity-50 text-lg faqans5 hidden">Your data's security is a top priority. Manage Wise employs robust data encryption and follows industry best practices to ensure your sensitive information is safe and protected.</p>
+                        <p class="xl:w-[43rem] sm:w-[39rem] opacity-50 xl:text-lg sm:text-base sm:flex sm:flex-wrap faqans5 hidden">Your data's security is a top priority. Manage Wise employs robust data encryption and follows industry best practices to ensure your sensitive information is safe and protected.</p>
                     </div>
                     
                     
                 </div>
             </div>
 
-            <div class="footer_second_third w-screen h-[60rem]">            
-                <div id="pricing" class="footerlanding_second relative  flex flex-col justify-center items-center gap-[1.7rem]">
-                    <span class="bg-white p-2 text-lg rounded-lg w-28 h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">💲<span class="text-xs font-bold">PRICING</span></span>
-                    <p class="text-5xl animate-wiggle_1 font-semibold  font-inter text-center">Select your ideal<span class="text-[#fe8162]">Pricing</span>Plan </p>
-                    <p class="text-xl opacity-50 font-semibold text-center w-[38rem]">At Manage Wise, we believe in providing you with <br> pricing plans that adapt to your unique needs.</p>      
+            <div class="footer_second_third w-screen xl:h-[60rem] sm:h-[116rem]">            
+                <div id="pricing" class="footerlanding_second relative  flex flex-col justify-center items-center sm:gap-2 xl:gap-[1.7rem]">
+                    <span class="bg-white p-2 text-lg rounded-lg xl:w-28 sm:w-24 sm:h-8 xl:h-8 flex justify-center items-center  text-[#8247ff] font-medium border-2">💲<span class="text-xs font-bold">PRICING</span></span>
+                    <p class="xl:text-5xl sm:text-3xl animate-wiggle_1 font-semibold  font-inter text-center">Select your ideal<span class="text-[#fe8162]">Pricing</span>Plan </p>
+                    <p class="text-xl opacity-50 font-semibold hidden xl:block text-center w-[38rem]">At Manage Wise, we believe in providing you with <br> pricing plans that adapt to your unique needs.</p>      
+                    <p class="xl:text-xl sm:text-lg sm:leading-6 xl:hidden sm:font-normal opacity-50 font-semibold text-center w-[38rem]">At Manage Wise, we believe in providing you with <br> pricing plans that adapt to your unique needs.</p>      
                 </div>
 
-                <div class="footerlanding_third relative top-28 mx-auto flex  justify-center items-center w-[80rem] h-max gap-12">
-                    <div class="rate1 scheduling1 box opacity-0 box cardanimation6 border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[29rem] rounded-3xl bg-[#ededfa]">
+                <div class="footerlanding_third relative top-28 mx-auto flex justify-center items-center sm:flex-wrap sm:w-[35rem] sm:h-[98rem] xl:w-[80rem] xl:h-max sm:gap-0 xl:gap-12">
+                    <div class="rate1 scheduling1 box opacity-0 box cardanimation6 border-[#efeffa] border-[0.1px]    xl:w-[23.6rem] sm:w-[33rem]  h-[29rem] rounded-3xl bg-[#ededfa]">
                         <div class="rate-card flex flex-col p-8 gap-4 justify-evenly h-[29rem]">
                             <span class="bg-white p-2 text-[0.8rem] rounded-lg w-20 h-7 flex justify-center items-center gap-2 text-[#ffb9a8] font-bold border-2">FREE</span>
                             <div class="text-black text-6xl flex  w-36 font-semibold">
@@ -237,7 +239,7 @@
                             <button class="bg-white w-44  h-14 rounded-xl shadow-md font-[600] text-black text-lg font-sans transition-all ease-in-out delay-150   duration-500 hover:border-[0.1px] hover:border-black border-[#eeeefa] ">Get Started</button>
                         </div>
                     </div>
-                    <div class="rate2 communication1 box opacity-0 box cardanimation7 border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[29rem] rounded-3xl relative bottom-6 bg-[#1c1c1c]">
+                    <div class="rate2 communication1 box opacity-0 box cardanimation7 border-[#efeffa] border-[0.1px] xl:w-[23.6rem] sm:w-[33rem]  h-[29rem] rounded-3xl relative xl:bottom-6 bg-[#1c1c1c]">
                         <div class="rate-card flex flex-col p-8 gap-4 justify-evenly h-[29rem]">
                             <span class="bg-white p-2 text-[0.8rem] rounded-lg w-20 h-7 flex justify-center items-center gap-2 text-[#ffb9a8] font-bold border-2">STANDARD</span>
                             <div class="text-white text-6xl flex  w-36 font-semibold">
@@ -256,7 +258,7 @@
                             <button class="bg-[#8247ff] w-44  h-14 rounded-xl shadow-md font-[600] text-white text-lg font-sans transition-all ease-in-out delay-150   duration-500   hover:ring-[#8247ff] hover:ring-opacity-50  hover:ring-8">Get Started</button>
                         </div>
                     </div>
-                    <div class="rate3 analytics1 box opacity-0 box cardanimation8 border-[#efeffa] border-[0.1px] w-[23.6rem]  h-[29em] rounded-3xl bg-[#ededfa]">
+                    <div class="rate3 analytics1 box opacity-0 box cardanimation8 border-[#efeffa] border-[0.1px]     xl:w-[23.6rem] sm:w-[33rem]  h-[29em] rounded-3xl bg-[#ededfa]">
                         <div class="rate-card flex flex-col p-8 gap-4 justify-evenly h-[29rem]">
                             <span class="bg-white p-2 text-[0.8rem] rounded-lg w-20 h-7 flex justify-center items-center gap-2 text-[#ffb9a8] font-bold border-2">BUSINESS</span>
                             <div class="text-black text-6xl flex  w-36 font-semibold">
@@ -278,16 +280,16 @@
             </div>
 
             <div id="testimonials" class="finalheading relative w-screen h-max">
-                <div class="testimonial_heading relative w-[70rem] h-[20rem] flex flex-col gap-8 left-36">
-                    <span class="bg-white p-2 text-sm rounded-lg w-36 h-8 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">❤️ TESTIMONIALS</span>
-                    <p class="text-[56px] animate-wiggle_1 font-[600] font-inter text-black leading-none">Hear from our <span class="text-[#fe8162]">Satisfied </span> clients</p>
-                    <p class="text-xl text-black opacity-50 font-semibold  w-[38rem]">Discover why our clients love working with us. Read their <br> testimonials and learn how we has helped businesses.</p>
+                <div class="testimonial_heading relative w-[70rem] h-[20rem] flex flex-col items-start xl:gap-8 sm:gap-4 sm:left-10 xl:left-36">
+                    <span class="bg-white p-2 xl:text-sm sm:text-xs rounded-lg xl:w-36 sm:w-32  xl:h-8  sm:h-7 flex justify-center items-center gap-2 text-[#8247ff] font-medium border-2">❤️ TESTIMONIALS</span>
+                    <p class="xl:text-[56px] sm:text-3xl animate-wiggle_1 font-[600] font-inter text-black leading-none">Hear from our <span class="text-[#fe8162]">Satisfied </span> clients</p>
+                    <p class="xl:text-xl sm:text-lg sm:leading-6 sm:font-normal  text-black opacity-50 xl:font-semibold  w-[38rem]">Discover why our clients love working with us. Read their <br> testimonials and learn how we has helped businesses.</p>
                 </div>
             </div>
 
-            <div  class=" swiper mySwiper testimonial_slider_animation bottom-28 w-screen h-[32rem] flex gap-6 justify-center mx-auto">
+            <div  class=" swiper mySwiper testimonial_slider_animation bottom-28 w-screen xl:h-[32rem] sm:h-[25rem] flex gap-6 justify-center mx-auto">
                <div class="swiper-wrapper">
-                   <div class="card swiper-slide border-[#efeffa] border-[0.1px] w-[22rem]  h-[24rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
+                   <div class="card swiper-slide border-[#efeffa] border-[0.1px] w-[22rem]  xl:h-[24rem] sm:h-[0rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
                    <div class="sarah_desc font-oswald text-xl font-semibold text-[7f7f7f]"> "The customer support <br> team behind this product is <br> exceptional. They have been <br> incredibly responsive and <br> helpful, addressing any <br> questions or concerns <br> promptly.</div>
                     <div class="flex gap-2 items-center text-xl  font-semibold font-oswald">
                         <img class="w-20 object-cover" src="assets/sara_project_manager.webp" alt="sarah">
@@ -297,7 +299,7 @@
                         </div>
                     </div>
                    </div>
-                   <div class="card swiper-slide border-[#efeffa] border-[0.1px] w-[22rem]  h-[22rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
+                   <div class="card swiper-slide border-[#efeffa] border-[0.1px] w-[22rem]  xl:h-[22rem] sm:h-[0rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
                     <div class="david_desc font-oswald text-xl font-semibold text-[7f7f7f]">"Using this product has <br> been a game-changer for <br> our team. The collaboration <br>features and intuitive <br>
                         interface have greatly <br> improved our productivity.</div>
                     <div class="flex gap-2 items-center text-xl  font-semibold font-oswald">
@@ -309,7 +311,7 @@
                     </div>
                    </div>
 
-                   <div class="card swiper-slide border-[#efeffa] border-[0.1px] w-[22rem]  h-[24rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
+                   <div class="card swiper-slide border-[#efeffa] border-[0.1px] w-[22rem]  xl:h-[24rem] sm:h-[0rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
                     <div class="alex_desc font-oswald text-xl font-semibold text-[7f7f7f]">"I can't imagine running my <br> business without this <br> product. The automation <br> features have saved me <br> hours of manual work,<br> allowing me to focus on <br> strategic tasks.</div>
                     <div class="flex gap-2 items-center text-xl  font-semibold font-oswald">
                         <img class="w-20 object-cover" src="assets/Alex it manager.webp" alt="alex"> 
@@ -320,7 +322,7 @@
                     </div>
                    </div>
 
-                   <div class="card swiper-slide border-[#efeffa] border-[0.1px] w-[22rem]  h-[22rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
+                   <div class="card swiper-slide border-[#efeffa] border-[0.1px] w-[22rem]  xl:h-[22rem] sm:h-[0rem] rounded-3xl bg-white p-8 flex flex-col gap-5">
                     <div class="emily_desc font-oswald text-xl font-semibold text-[7f7f7f]">"Manage Wise transformed <br> our team's productivity. The <br> intuitive interface and <br> powerful features have <br> made a significant impact <br> on our daily operations"</div>
                     <div class="flex gap-2 items-center text-xl  font-semibold font-oswald">
                         <img class="w-20 object-cover" src="assets/Emily Art director.webp" alt="Emily">
