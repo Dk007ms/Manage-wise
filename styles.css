@@ -274,6 +274,13 @@ body {
     opacity: 1;
     background-color: white;
 }
+.navbartogglelinksanimate{
+  @media screen and (max-width:639px) {
+    height: 21rem;
+    opacity: 1;
+    background-color: white;
+  }
+}
 
 .navbartogglelinkstransition{
     transition:all;
