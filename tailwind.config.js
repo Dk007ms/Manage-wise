@@ -53,6 +53,18 @@ module.exports = {
           '100%': { transform: 'translateY(5px)',opacity: 1 }
         }
       },
+      screens: {
+        // Define custom screen sizes
+        'min-xl': {'raw': '(min-width: 913px) and (max-width: 1024px)'},
+        'min-900': {'raw': '(min-width: 900px) and (max-width: 912px)'},
+        'min-1280': {'raw': '(min-width: 1280px) and (max-width: 1376px)'},
+
+        'min-820': '820px', // You can name it whatever you like
+
+        // Usage of media query for screens with a minimum width of 900 pixels
+        'min-820': {'raw': '(min-width: 820px) and (max-width: 900px)'},
+        
+      },
     },
   },
   plugins: [

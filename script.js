@@ -173,17 +173,29 @@ header_btn.addEventListener("mouseout", () => {
    },150);
 });
 const header_btn1 = document.querySelector(".header_get_started_btn1");
+const footer_get_started_btn1 = document.querySelector(".footer_get_started_btn1");
 const header_get_started_btn_img1 = document.querySelector(".header_get_started_btn_img1");
+const footer_get_started_btn_img1 = document.querySelector(".footer_get_started_btn_img1");
 
 header_btn1.addEventListener("mouseover", () => {
    setTimeout(()=>{
       header_get_started_btn_img1.style.display = "inline-block";
    },150);
 });
+footer_get_started_btn1.addEventListener("mouseover", () => {
+   setTimeout(()=>{
+      footer_get_started_btn_img1.style.display = "inline-block";
+   },150);
+});
 
 header_btn1.addEventListener("mouseout", () => {
    setTimeout(()=>{
       header_get_started_btn_img1.style.display = "none";
+   },150);
+});
+footer_get_started_btn1.addEventListener("mouseout", () => {
+   setTimeout(()=>{
+      footer_get_started_btn_img1.style.display = "none";
    },150);
 });
 
