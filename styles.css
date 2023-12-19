@@ -7,6 +7,7 @@ body {
   width: 49.5%;
   height: max-content;
 }
+
 .swiper {
   @media screen and (min-width: 630px) and (max-width: 1279px) {
     position: relative;
@@ -31,6 +32,19 @@ body {
    display: flex;
    align-items: flex-start;
  }
+
+}
+
+.swiper{
+  @media screen and (max-width:629px) {
+    position: relative;
+    top: 3rem;
+    width: 95%;
+    height: 34rem;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 4rem;
+  }
 }
 
 .card {
@@ -45,6 +59,24 @@ body {
     width: 20em;
     height: 69%;
     border-radius: 4rem;
+  }
+}
+
+.card{
+  @media screen and (max-width:630px) {
+    width: 15em;
+    height: 50%;
+    border-radius: 4rem;
+  }
+}
+
+.feed{
+  @media screen and (max-width:630px) {
+    width: 15em;
+    height: 50%;
+    border-radius: 4rem;
+    font-size: small;
+    line-height: normal;
   }
 }
 
