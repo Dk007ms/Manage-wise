@@ -9,8 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@alpinejs/intersect": "^3.13.3",
-    "alpinejs": "^3.13.3",
     "tailwindcss-3d": "^1.0.4",
     "vite": "^5.0.4"
   },
