@@ -63,8 +63,13 @@ module.exports = {
 
         // Usage of media query for screens with a minimum width of 900 pixels
         'min-820': {'raw': '(min-width: 820px) and (max-width: 900px)'},
+
+        'min-426': {'raw': '(max-width: 426px)'},
         
       },
+      width: {
+        '93': '92%',
+      }
     },
   },
   plugins: [
